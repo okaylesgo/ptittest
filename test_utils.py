@@ -13,6 +13,8 @@ def test_fact():
     assert MAMAMIA.fact(7)==5040
 def test_roots():
     assert MAMAMIA.roots(2,1,-1)==(-1,1/2)
+    assert MAMAMIA.roots(1/4,1,1)==(-2)
+    assert MAMAMIA.roots(10,1,10)==tuple()
 
 def test_integrate(): 
     pass
