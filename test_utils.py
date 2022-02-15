@@ -6,9 +6,9 @@ def test_DIV():
         MAMAMIA.DIV(1,0)
     
 
-def test_roots():
-    # À compléter...
-    pass
+def test_fact():
+    with pytest.raises(ValueError):
+        MAMAMIA.fact(-50)
 
 def test_integrate():
     # À compléter...
