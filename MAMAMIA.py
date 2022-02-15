@@ -15,16 +15,18 @@ def fact(a):
 print("hihiha")
 print('tarna')
 print('hahaahahahahahah')
+import math
 def roots(a, b, c):
     delta=b**2-4*a*c
-    if delta==0:
+    if math.isclose(delta,0,rel_tol=1e-9):
         return((-b/(2*a)))
-    if delta>0:
-        d=(-b+delta**(1/2))/(2*a)
-        e=(-b-delta**(1/2))/(2*a)
-        return(e,d)
-    if delta<0:
-        return tuple()
+    if delta!=0:
+        if delta>0:
+                d=(-b+delta**(1/2))/(2*a)
+                e=(-b-delta**(1/2))/(2*a)
+                return(e,d)
+        if delta<0:
+            return tuple()
 def integr(function, lower, upper):
     def f(x):
         return eval(function)
