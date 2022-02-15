@@ -10,8 +10,9 @@ def test_DIV():
 def test_fact():
     with pytest.raises(ValueError):
         MAMAMIA.fact(-50)
-    assert test_fact(7)==5040
+    assert MAMAMIA.fact(7)==5040
+def test_roots():
+    assert MAMAMIA.roots(2,1,-1)==(1,-2)
 
-def test_integrate():
-    # À compléter...
+def test_integrate(): 
     pass
