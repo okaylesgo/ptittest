@@ -1,3 +1,5 @@
+from scipy.integrate import quad
+
 def DIV(a,b):
     return a/b
 def fact(a):
@@ -23,6 +25,10 @@ def roots(a, b, c):
         return(e,d)
     if delta<0:
         return tuple()
-
+def integr(function, lower, upper):
+    def f(x):
+        return eval(function)
+    return quad(f,lower,upper)[0]
+print(integr("x+1",2,3))
 
 

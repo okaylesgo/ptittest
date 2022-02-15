@@ -17,4 +17,4 @@ def test_roots():
     assert MAMAMIA.roots(10,1,10)==tuple()
 
 def test_integrate(): 
-    pass
+    assert MAMAMIA.integr("x+1",2,3)==3.5
