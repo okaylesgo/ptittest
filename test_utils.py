@@ -12,7 +12,7 @@ def test_fact():
         MAMAMIA.fact(-50)
     assert MAMAMIA.fact(7)==5040
 def test_roots():
-    assert MAMAMIA.roots(2,1,-1)==(1,-2)
+    assert MAMAMIA.roots(2,1,-1)==(-1,1/2)
 
 def test_integrate(): 
     pass
