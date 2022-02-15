@@ -1,3 +1,2 @@
-def DIVhess(a,b):
+def DIV(a,b):
     return a/b
-    
