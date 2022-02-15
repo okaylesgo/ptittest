@@ -1,2 +1,3 @@
-print("hihiha")
-print('tarna')
+def DIVhess(a,b):
+    return a/b
+    
