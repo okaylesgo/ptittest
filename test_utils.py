@@ -2,7 +2,9 @@ import pytest
 import MAMAMIA
 
 def test_DIV():
-     pass
+    with pytest.raises(ZeroDivisionError):
+        MAMAMIA.DIV(1,0)
+    
 
 def test_roots():
     # À compléter...
