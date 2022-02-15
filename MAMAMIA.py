@@ -10,3 +10,6 @@ def fact(a):
     if result<0:
         raise ValueError()
     return result
+print("hihiha")
+print('tarna')
+print('hahaahahahahahah')
